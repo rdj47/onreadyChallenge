@@ -59,7 +59,7 @@ class Inventory {
         console.log(''.concat('Vehículo más caro: ', itemsCopy[0].brand, ' ', itemsCopy[0].model));
     }
 
-    mostChpItem() {
+    cheapestItem() {
         let itemsCopy = this.items;
         itemsCopy.sort((a, b) =>  b.price - a.price );
         console.log(''.concat('Vehículo más barato: ', inventory.items[inventory.items.length-1].brand, ' ', inventory.items[inventory.items.length-1].model));
@@ -101,7 +101,7 @@ inventory.allItems();
 console.log('=============================');
 inventory.mostExpItem()
 //console.log(''.concat('Vehículo más caro: ', inventory.items[0].brand, ' ', inventory.items[0].model));
-inventory.mostChpItem();
+inventory.cheapestItem();
 //console.log(''.concat('Vehículo más barato: ', inventory.items[inventory.items.length-1].brand, ' ', inventory.items[inventory.items.length-1].model));
 inventory.yItem();
 //let yItem = inventory.items.find(element => element.brand.includes('Y') === true);
