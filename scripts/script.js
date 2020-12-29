@@ -64,6 +64,7 @@ class Inventory {
         itemsCopy.sort((a, b) =>  b.price - a.price );
         console.log(''.concat('Vehículo más barato: ', inventory.items[inventory.items.length-1].brand, ' ', inventory.items[inventory.items.length-1].model));
     }
+    
     yItem() {
         let yItem = this.items.find(element => element.brand.includes('Y') === true);
         console.log(''.concat('Vehículo que contiene en el modelo la letra ‘Y’: ', yItem.brand, ' ', yItem.model, ' ', '$'.concat(Intl.NumberFormat("de-DE", {minimumFractionDigits: 2}).format(yItem.price))));
